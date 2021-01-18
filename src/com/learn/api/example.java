@@ -153,10 +153,10 @@ public class example {
 // print all prime number between 1 to 1000
 //Find if the string contain substring LLO
 // Adding element to an array list
-// read about 1.sorting algorithm, few sorting techniques, selection, insertion, quick , merge, bubble, 
-// Pass an array to a method and search a specific value in the array and print the index of the value. 
+// read about 1.sorting algorithm, few sorting techniques, selection(done), insertion(done), quick(done) , merge, bubble(done), 
+// Pass an array to a method and search a specific value in the array and print the index of the value(done). 
 // Create a thread and start a thread
-// Search algorithm searching techniques, selection, insertion, quick , merge, bubble,
+// Search algorithm searching techniques, selection, insertion, quick , merge, bubble, binarySearch(done)
 
 
 
