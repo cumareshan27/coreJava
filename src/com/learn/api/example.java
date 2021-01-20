@@ -157,6 +157,9 @@ public class example {
 // Pass an array to a method and search a specific value in the array and print the index of the value(done). 
 // Create a thread and start a thread
 // Search algorithm searching techniques, selection, insertion, quick , merge, bubble, binarySearch(done)
+//write a method to find a max and min in an array (done)
+	//write a method which accept two arrays and print common eleemtn in both arrays 
+	// convert the array into arrayList
 
 
 

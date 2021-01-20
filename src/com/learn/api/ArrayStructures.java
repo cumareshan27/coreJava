@@ -1,5 +1,7 @@
 package com.learn.api;
 
+import java.util.ArrayList;
+
 public class ArrayStructures {
 
 	private int[] theArray = new int[50];
@@ -225,6 +227,94 @@ public class ArrayStructures {
 		}
 	}
 	
+	public void arrayOfString(String[] string1, String string2) {
+		
+		for (int i=1; i < string1.length; i++) {
+			if(string1[i].equals(string2)) {
+				System.out.println("String is present in array at the index of :-" + i + " string value is "+ string2);
+			} else {
+				System.out.println("Value not present in Array");
+			}
+		}
+	}
+	
+	
+//	public class sampleApi{
+////		EmployeeReposotry employeeRepository;
+////		@GetMapping("/")
+//		
+//		int[] array1 = new int[25];
+//		
+//		for (int i = 0; i < array1; i++) {
+//			for (int j = 1; j <=25; j++) {
+//				array1[i] = j;
+//			}
+//			
+//		}
+//		
+//		
+//		// create  new array and put some values and then return it 
+//		
+//		
+//	}
+	
+	//method to accept an string and return the total number of vowels 
+	
+	public void returnVowels(String vowelsl) {
+		int count = 0;
+		for (int i = 0; i < vowelsl.length(); i++) {
+			if(vowelsl.charAt(i) == 'a' || vowelsl.charAt(i) == 'e' || vowelsl.charAt(i) == 'i' ) {
+				count = count +1;
+				//System.out.println("this string has " + count + "vowels in" + i);
+//			} else {
+//				System.out.println("no vowels in the sentence");
+			}
+		}
+		 System.out.println("This senstene has:- " + count + " vowels");
+	}
+	
+	
+	public void findMinMax(int[] minMaxArray) {
+		
+		int minValue = minMaxArray[0];
+		int maxValue = 0;
+		for (int i = 0; i <= (minMaxArray.length-1); i++ ) {
+			System.out.println("minMaxArray:- "+ minMaxArray[i] + " index is at:- "+ i);
+			if(minMaxArray[i] < minValue) {
+				minValue = minMaxArray[i];
+			}else if(minMaxArray[i] > maxValue){
+				maxValue = minMaxArray[i];
+			}
+		}
+		System.out.println("Min value in the array:- " + minValue + " Max value in the array:- "+ maxValue);
+	}
+	
+	public void compareTwoArrays(int testArray1[], int testArray2[]) {
+		for (int i=0; i <= testArray1.length; i++) {
+			for (int j=0; j < testArray2.length; j++){
+				// I dont understand the ArrayIndexOutofBoundsException, Rishabh 
+				// both arrays are same length, I can agree the issues if the both arrays are in variant length
+				if(testArray1[i] == testArray2[j]) {
+					System.out.println("value of Array one " +testArray1[i] + " index of:- "+ i + " is equal to " + testArray2[j] + " Array two value " + j);
+				}
+			}
+		}
+	}
+	
+	public void convertArrayToArrayList(int testArray1[]) {
+		ArrayList testArrayList = new ArrayList();
+		for(int i=0; i<testArray1.length; i++) {
+			int testArrayTemp = testArray1[i];
+			testArrayList.add(testArrayTemp);
+		}
+		
+		System.out.println("ArrayList is:- " + testArrayList);
+		
+	}
+	
+	
+	
+	
 	public static void main (String[] args) {
 		System.out.println("test tets ");
 		
@@ -233,18 +323,22 @@ public class ArrayStructures {
 		//myArrayStructures.printArray();
 		//myArrayStructures.getValueAtIndex(9);
 		//myArrayStructures.doesArrayContainThisValue(5);
-		myArrayStructures.insertValue(39);
+		//myArrayStructures.insertValue(39);
 		//myArrayStructures.printArray();
 		//myArrayStructures.linerSearchForValue(39);
-		System.out.println("Binary Serarch");
-		System.out.println(" ");
-		myArrayStructures.binarySearchForValue(39);
-		System.out.println("selection Sort");
-		System.out.println(" ");
-		myArrayStructures.selectionSort();
-		System.out.println("Insertion Sort");
-		System.out.println(" ");
-		myArrayStructures.insertionSort();
-		
+//		System.out.println("Binary Serarch");
+//		System.out.println(" ");
+		//myArrayStructures.binarySearchForValue(39);
+//		System.out.println("selection Sort");
+//		System.out.println(" ");
+//		myArrayStructures.selectionSort();
+//		System.out.println("Insertion Sort");
+//		System.out.println(" ");
+//		myArrayStructures.insertionSort();
+		//myArrayStructures.arrayOfString(new String[]{"s", "t", "y", "bw", "u", "BW"}, "bw");
+		//myArrayStructures.returnVowels("it is a suny day");
+		//myArrayStructures.findMinMax(new int[]{12, 17, 9, 8, 49, 73, 99, 2, 3});
+		myArrayStructures.compareTwoArrays(new int[]{12, 3, 45, 7, 8, 9, 78, 93}, new int[] {12, 5, 7, 8, 98, 78, 93, 56});
+		//myArrayStructures.convertArrayToArrayList(new int[]{12, 3, 45, 7, 8, 9, 78, 93});
 	}
 }
