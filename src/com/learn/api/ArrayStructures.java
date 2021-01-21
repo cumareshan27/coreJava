@@ -277,6 +277,7 @@ public class ArrayStructures {
 	public void findMinMax(int[] minMaxArray) {
 		
 		int minValue = minMaxArray[0];
+		//int minValue = 0;
 		int maxValue = 0;
 		for (int i = 0; i <= (minMaxArray.length-1); i++ ) {
 			System.out.println("minMaxArray:- "+ minMaxArray[i] + " index is at:- "+ i);
@@ -304,8 +305,10 @@ public class ArrayStructures {
 	public void convertArrayToArrayList(int testArray1[]) {
 		ArrayList testArrayList = new ArrayList();
 		for(int i=0; i<testArray1.length; i++) {
-			int testArrayTemp = testArray1[i];
-			testArrayList.add(testArrayTemp);
+			//int testArrayTemp = testArray1[i];
+			
+			//testArrayList.add(testArrayTemp);
+			testArrayList.add(testArray1[i]);
 		}
 		
 		System.out.println("ArrayList is:- " + testArrayList);
@@ -339,6 +342,6 @@ public class ArrayStructures {
 		//myArrayStructures.returnVowels("it is a suny day");
 		//myArrayStructures.findMinMax(new int[]{12, 17, 9, 8, 49, 73, 99, 2, 3});
 		myArrayStructures.compareTwoArrays(new int[]{12, 3, 45, 7, 8, 9, 78, 93}, new int[] {12, 5, 7, 8, 98, 78, 93, 56});
-		//myArrayStructures.convertArrayToArrayList(new int[]{12, 3, 45, 7, 8, 9, 78, 93});
+		//myArrayStructures.convertArrayToArrayList(new int[]{12, 3, 45, 7, 8, 9, 78, 93, 106});
 	}
 }

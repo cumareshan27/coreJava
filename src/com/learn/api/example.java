@@ -155,11 +155,21 @@ public class example {
 // Adding element to an array list
 // read about 1.sorting algorithm, few sorting techniques, selection(done), insertion(done), quick(done) , merge, bubble(done), 
 // Pass an array to a method and search a specific value in the array and print the index of the value(done). 
-// Create a thread and start a thread
+// Create a thread and start a thread - notnow
 // Search algorithm searching techniques, selection, insertion, quick , merge, bubble, binarySearch(done)
 //write a method to find a max and min in an array (done)
 	//write a method which accept two arrays and print common eleemtn in both arrays 
 	// convert the array into arrayList
+
+//Read through https://www.baeldung.com/java-connect-mysql
+//create the DB in mysql-->
+//https://www.youtube.com/watch?v=GB8k2-Egfv0&list=PLC97BDEFDCDD169D7
+//1,2,3,4,5,6,7,8,9,10,19,21
+//Why strings are immutable in java
+//write a program to show a nullpointer execption and control it by using try catch block
+//use stream and filter on an arraylist (filter odd numbers from an arraylist)
+//create a hashmap add values and iterate over it to print. (see a video internal working of hashmap)
+// Read about singleton pattern in java
 
 
 
